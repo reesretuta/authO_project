@@ -11,7 +11,6 @@ var client = new twilio(accountSid, authToken);
 
 app.use(bodyParser.json());
 
-
 app.get('/', function (req, res) {
   res.sendStatus(200);
   const options = {
