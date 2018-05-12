@@ -15,9 +15,9 @@ app.use(bodyParser.json());
 app.get('/', function (req, res) {
   res.sendStatus(200);
   const options = {
-				method: 'GET',
-				uri: 'https://weworkremotely.com/categories/remote-programming-jobs',
-			};
+    method: 'GET',
+    uri: 'https://weworkremotely.com/categories/remote-programming-jobs',
+  };
 
   // fetch response body from the jobs board site weworkremotely.com, scrape DOM data related to job postings, push links into an array and text the latest 10 job postings to a job seeker
   request(options).then(data => {
